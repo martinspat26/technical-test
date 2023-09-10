@@ -18,13 +18,13 @@ class WindFarmFactory extends Factory
      */
     public function definition()
     {
-            static $windFarmCounter = 0;
-            return [
-                'name' => function() use (&$windFarmCounter) {
-                    $windFarmCounter ++;
-                    return 'WindFarm ' . $windFarmCounter;
-                },
-                'location' => $this->faker->city,
-            ];
+        static $windFarmCounter = 0;
+        return [
+            'name' => function () use (&$windFarmCounter) {
+                $windFarmCounter++;
+                return 'WindFarm ' . $windFarmCounter;
+            },
+            'location' => $this->faker->city,
+        ];
     }
 }
