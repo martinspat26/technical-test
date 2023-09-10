@@ -5368,7 +5368,7 @@ function Dashboard() {
         className: "justify-center flex gap-20 self-center mt-4 font-mono font-bold",
         children: windFarms.map(function (windFarm, index) {
           return /*#__PURE__*/(0,react_jsx_runtime__WEBPACK_IMPORTED_MODULE_2__.jsx)("div", {
-            className: "cursor-pointer hover:bg-purple-200 rounded-lg shadow-lg p-4 bg-white ".concat(indexWindFarm === index ? 'bg-purple-300' : ''),
+            className: "cursor-pointer hover:bg-purple-200 rounded-lg shadow-lg p-4 bg-white ".concat(indexWindFarm === index ? 'bg-purple-400' : ''),
             onClick: function onClick() {
               return setIndexWindFarm(index);
             },

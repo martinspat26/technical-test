@@ -38,7 +38,7 @@ function Dashboard() {
                     <div className="justify-center flex gap-20 self-center mt-4 font-mono font-bold">
                         {windFarms.map((windFarm, index) => (
                             <div key={windFarm.id}
-                                className={`cursor-pointer hover:bg-purple-200 rounded-lg shadow-lg p-4 bg-white ${indexWindFarm === index ? 'bg-purple-300' : ''}`}
+                                className={`cursor-pointer hover:bg-purple-200 rounded-lg shadow-lg p-4 bg-white ${indexWindFarm === index ? 'bg-purple-400' : ''}`}
                                 onClick={() => setIndexWindFarm(index)}>
                                 {windFarm.name}
                             </div>
