@@ -18,6 +18,14 @@ use Illuminate\Support\Facades\Route;
 Route::post(
     '/tokens/create',
     'App\Http\Controllers\TokenController@create'
-);
+)->name('login');
 
-Route::get('/dashboard', 'App\Http\Controllers\DashboardController@index')->name('dashboard.index')->middleware('auth:sanctum');
+Route::middleware('auth:sanctum')->delete(
+    '/tokens/delete',
+    'App\Http\Controllers\TokenController@delete'
+)->name('logout');
+
+Route::middleware('auth:sanctum')->get(
+    '/dashboard',
+    'App\Http\Controllers\DashboardController@index'
+)->name('dashboard.index');
