@@ -10,7 +10,6 @@ class DashboardController extends Controller
 {
     public function index()
     {
-        // dd('dashboard');
         //query to get all wind farms e return response
         $windFarms = WindFarm::with('turbines.components')->get();
 
