@@ -1,0 +1,23 @@
+php artisan make:model NameModel
+php artisan make:factory NameFactory
+php artisan make:seeder NameSeeder
+php artisan db:seed --class=NameSeeder
+php artisan migrate:reset
+php artisan migrate --step
+php artisan db:seed --class=UserSeeder
+
+
+php artisan make:rule PasswordFormatRule
+
+
+react laravel
+composer require laravel/ui:*
+php artisan ui react
+
+npm install
+npm run dev
+npm run watch-poll
+
+instalar tailwind
+npm install tailwindcss@latest
+npm audit fix
